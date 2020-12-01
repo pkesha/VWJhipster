@@ -1,0 +1,41 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.parhamkeshavarzi.velocityworks"
+    },
+    "jhipsterVersion": "6.10.5",
+    "applicationType": "monolith",
+    "baseName": "VelocityWorksAdmin",
+    "packageName": "com.parhamkeshavarzi.velocityworks",
+    "packageFolder": "com/parhamkeshavarzi/velocityworks",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "N2FjM2NlNjI4NTlkZmY3NDg2ZTA2NWEwYzM1MTI1NzRiZTllNWMyZjE5ZmYzZjYzOGUwYWI4ZjA1NzkzYzkxZTE4ZjVkNzMzMmUyZDk1YmRjNDZkNzNmMmM1NDdiMjgxZDZhYjRkOWRlYzA3NjQ0NDM5MzY3YTNmMTI2ZTcyZDI=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "angularX",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "creationTimestamp": 1606679830008,
+    "testFrameworks": ["protractor"],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "blueprints": [],
+    "lastLiquibaseTimestamp": 1606729548000
+  }
+}

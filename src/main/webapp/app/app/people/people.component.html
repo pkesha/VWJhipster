@@ -1,0 +1,25 @@
+<h1>People</h1>
+
+<mat-selection-list #peopleList [multiple]="false">
+  <mat-list-option *ngFor="let person of people" (click)="onChange(person)" [value]="person">
+    {{person.name}}
+  </mat-list-option>
+</mat-selection-list>
+
+<div class="people-remove-container">
+  <p>
+    Person selected: {{peopleList.selectedOptions.selected[0]?.value.name}}
+  </p>
+  <button mat-raised-button (click)="deletePerson(peopleList.selectedOptions.selected[0]?.value)" id="delete-person">Delete Person</button>
+</div>
+
+<br>
+
+<div class="people-form-container">
+  <mat-form-field hintLabel="Max 100 characters" appearance="fill">
+    <mat-label>Save a new Person</mat-label>
+    <input matInput #input maxlength="100" [(ngModel)]='personNameToSave' [value]='personNameToSave'placeholder="Ex. Person"/>
+  </mat-form-field>
+
+  <button mat-raised-button (click)="save(personNameToSave)" id="save-person">Save Person</button>
+</div>

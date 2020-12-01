@@ -1,0 +1,20 @@
+<h1>Rooms</h1>
+
+<mat-selection-list #roomList [multiple]="false">
+  <mat-list-option *ngFor="let room of rooms" (click)="onChange(room)" [value]="room">
+    {{room.name}}
+  </mat-list-option>
+</mat-selection-list>
+
+<p>
+  Room selected: {{roomList.selectedOptions.selected[0]?.value.name}}
+</p>
+
+<div class="room-form-container">
+  <mat-form-field hintLabel="Max 100 characters" appearance="fill">
+    <mat-label>Save a new Room</mat-label>
+    <input matInput #input maxlength="100" [(ngModel)]='roomNameToSave' [value]='roomNameToSave'placeholder="Ex. Room"/>
+  </mat-form-field>
+
+  <button mat-raised-button (click)="save(roomNameToSave)" id="save-room">Save Room</button>
+</div>

@@ -1,0 +1,20 @@
+<h1>Facilities</h1>
+
+<mat-selection-list #facilityList [multiple]="false">
+  <mat-list-option *ngFor="let facility of facilities" (click)="onChange(facility)" [value]="facility">
+    {{facility.name}}
+  </mat-list-option>
+</mat-selection-list>
+
+<p>
+  Facility selected: {{facilityList.selectedOptions.selected[0]?.value.name}}
+</p>
+
+<div class="facility-form-container">
+  <mat-form-field hintLabel="Max 100 characters" appearance="fill">
+    <mat-label>Save a new Facility</mat-label>
+    <input matInput #input maxlength="100" [(ngModel)]='facilityNameToSave' [value]='facilityNameToSave'placeholder="Ex. Facility"/>
+  </mat-form-field>
+
+  <button mat-raised-button (click)="save(facilityNameToSave)" id="save-facility">Save Facility</button>
+</div>

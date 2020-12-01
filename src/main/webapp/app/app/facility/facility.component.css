@@ -1,0 +1,26 @@
+.facility-viewport {
+  height: 200px;
+  width: 200px;
+  border: 1px solid black;
+}
+
+.facility-item {
+  height: 50px;
+}
+
+mat-selection-list {
+  max-height: 150px;
+  overflow: auto;
+}
+
+mat-list-option:hover {
+  background-color: #babdc2;
+}
+
+.mat-list-single-selected-option {
+  background: #babdc2 !important;
+}
+
+.example-container .mat-form-field + .mat-form-field {
+  margin-left: 8px;
+}
